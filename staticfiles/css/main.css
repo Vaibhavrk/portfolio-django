@@ -17,13 +17,3 @@ ul{
 }
 
 
-.social-links ul, li{
-	list-style-type:none;
-	display: inline-block;
-}
-
-.social{
-	width:20px;
-	height: 20px;
-}
-

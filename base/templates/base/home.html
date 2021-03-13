@@ -6,12 +6,37 @@
 <head>
     <title>Vaibhav K</title>
     <link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         body {
             background-image: -webkit-linear-gradient(to bottom right, #f8f8f8 50%, #1f1f1f 50%);
             background-image: linear-gradient(to bottom right, #f8f8f8 50%, #1f1f1f 50%);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #chn {
+            background-color: #1f1f1f;
+            border-color: orangered;
+        }
+
+        .sicons ul,
+        li {
+            list-style-type: none;
+            display: inline-block;
+            font-size: 5rem;
+        }
+        .licons ul,
+        li {
+            list-style-type: none;
+            display: inline-block;
+            font-size: 5rem;
+            align-content: center;
+        }
+        #quote
+        {
+            color: orangered;
         }
     </style>
 </head>
@@ -21,18 +46,19 @@
     <div class="container">
         <br>
         <div class="row">
-            <div class="col-md-3">
-                <div class="card card-body border-dark" id="profile-wrapper">
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div id="chn" class="card card-body text-white" id="profile-wrapper">
                     <img id="profile-pic" src="{% static '/images/profilephoto.jpg'%}">
                     <hr>
-                    <h4>Hi I'm Vaibhav!</h4>
+                    <h4>Hi, I'm Vaibhav!</h4>
                     <p>I love coding, problem solving and meeting new people.</p>
+                    <p id="quote">"People don't care about what you say, they care about what you build." - Mark Zuckerberg</p>
                 </div>
             </div>
 
-            <div class="col-md-9">
+            <div class="col-md-9 d-flex align-items-stretch">
                 <div class="card card-body border-dark">
-                    <h4>Who Am I</h4>
+                    <h4>About Me</h4>
                     <hr>
                     <p>I'm a Computer science graduate having 2+ years of
                         experience as Software Development Engineer in IT industry.</p>
@@ -42,18 +68,22 @@
                         to design, develop and deliver technology solutions to problems around me.
                     </p>
                     <hr>
-                    <ul class="social-links">
-                        <li><img class="social" src="{% static 'images/facebook.png' %}"></li>
-                        <li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
-                        <li><img class="social" src="{% static 'images/twitter.png' %}"></li>
-                        <li><img class="social" src="{% static 'images/github.png' %}"></li>
+                    <ul class="licons">
+                        <li><a href="https://www.facebook.com/vaibhav.khandekar.180" target="_blank"><i
+                                    class="devicon-facebook-plain colored"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/vaibhav-khandekar" target="_blank"><i
+                                    class="devicon-linkedin-plain-wordmark colored"></i></a></li>
+                        <li><a href="" target="_blank"><i class="devicon-twitter-original colored"></i></a></li>
+                        <li><a href="https://github.com/Vaibhavrk" target="_blank"><i
+                                    class="devicon-github-original-wordmark colored"></i>
+                            </a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <br>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card card-body border-dark h-100">
                     <h5>Experience</h5>
                     <hr>
@@ -62,27 +92,43 @@
                         advance scripting and automation. Working of EDA and data visualisation.
                         Experience in Django, MongoDB and cloud technologies. </p>
                     <hr>
-                    <p><u>Android Developer Intern At EBT</u>></p>
+                    <p><u>Android Developer Intern At EBT</u></p>
                     <p>Designed and built a data visualisation android application for enterprise resource planning.
                         Used database connectivity and MPAndroidChart data visualisation library. </p>
+                    <hr>
+                    <p><u>Applied CS With Android Facilitator</u></p>
+                    <p>Invited to attend an android boot camp at Google office, India and hosted few workshops as a
+                        facilitator on android development.</p>
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="card card-body border-dark h-100">
+            <div class="col-md-6 d-flex align-items-stretch">
+                <div id="chn" class="card card-body text-white h-100">
                     <h5>Skills</h5>
                     <hr>
                     <p>SQL, Python, Django, HTML/CSS, MongoDB, Jupyter Notebooks, Cloud and APIs and a whole bunch
                         more I can’t possibly mention in one sentence! ;)</p>
                     <p>PS: Working on Data Science and Machine Learning.</p>
                     <hr>
+                    <ul class="sicons">
+                        <li><i class="devicon-mysql-plain-wordmark colored"></i></li>
+                        <li><i class="devicon-python-plain-wordmark colored"></i></li>
+                        <li><i class="devicon-django-plain colored"></i></li>
+                        <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+                        <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+                        <li><i class="devicon-mongodb-plain-wordmark colored"></i></li>
+                        <li><i class="devicon-jupyter-plain-wordmark colored"></i></li>
+                        <li><i class="devicon-googlecloud-plain-wordmark colored"></i></li>
+                        <li><i class="devicon-heroku-plain-wordmark colored"></i></li>
+                        <li><i class="devicon-flask-original-wordmark"></i></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <br>
         <div class="row">
-            <div class="col-md-6">
-                <div class="card card-body border-dark h-100">
+            <div class="col-md-6 d-flex align-items-stretch">
+                <div id="chn" class="card card-body text-white h-100">
                     <h5>Projects</h5>
                     <hr>
                     <p>aaaa</p>
@@ -91,12 +137,12 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card card-body border-dark h-100">
                     <h5>Eduaction</h5>
                     <hr>
                     <p><u>G. H. Raisoni College of Engineering</u></p>
-                    <p>B.E in Computer Science and Engineering. Scored: 7.84 CGPA</p>
+                    <p>B.E in Computer Science and Engineering. Scored: 7. 84 CGPA</p>
                     <p><u>Shivchhatrapati College</u></p>
                     <p>Higher Secondary School Certificate. Scored: 70 Percent</p>
                     <p><u>Saint Meera School</u></p>
