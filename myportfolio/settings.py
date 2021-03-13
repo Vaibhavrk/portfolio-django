@@ -125,4 +125,5 @@ MEDIA_URL = '/images/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "staticfiles",
+    '/myportfolio/staticfiles/',
 ]

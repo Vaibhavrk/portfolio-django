@@ -5,42 +5,103 @@
 
 <head>
     <title>Vaibhav K</title>
-    <link rel="stylesheet" href="{% static '/css/main.css' %}" type="text/css">
+    <link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: -webkit-linear-gradient(to bottom right, #f8f8f8 50%, #1f1f1f 50%);
+            background-image: linear-gradient(to bottom right, #f8f8f8 50%, #1f1f1f 50%);
+        }
+    </style>
 </head>
 
-<body style="background-color:#F8F8F8;">
+<body>
     <br>
     <div class="container">
         <br>
         <div class="row">
             <div class="col-md-3">
-                <div class="card card-body"></div>
+                <div class="card card-body border-dark" id="profile-wrapper">
+                    <img id="profile-pic" src="{% static '/images/profilephoto.jpg'%}">
+                    <hr>
+                    <h4>Hi I'm Vaibhav!</h4>
+                    <p>I love coding, problem solving and meeting new people.</p>
+                </div>
             </div>
 
             <div class="col-md-9">
-                <div class="card card-body"></div>
+                <div class="card card-body border-dark">
+                    <h4>Who Am I</h4>
+                    <hr>
+                    <p>I'm a Computer science graduate having 2+ years of
+                        experience as Software Development Engineer in IT industry.</p>
+
+                    <p>I'm passionate about programming and delivering, clean, test-covered, well-designed and scalable
+                        code. I seek to learn and try to apply all of it in a way that makes life easier. I always try
+                        to design, develop and deliver technology solutions to problems around me.
+                    </p>
+                    <hr>
+                    <ul class="social-links">
+                        <li><img class="social" src="{% static 'images/facebook.png' %}"></li>
+                        <li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
+                        <li><img class="social" src="{% static 'images/twitter.png' %}"></li>
+                        <li><img class="social" src="{% static 'images/github.png' %}"></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-md-6">
-                <div class="card card-body"></div>
+                <div class="card card-body border-dark h-100">
+                    <h5>Experience</h5>
+                    <hr>
+                    <p><u>Software Developer at Tech Mahindra</u></p>
+                    <p>Designed, built and managed a database management system using SQL server. Actively involved in
+                        advance scripting and automation. Working of EDA and data visualisation.
+                        Experience in Django, MongoDB and cloud technologies. </p>
+                    <hr>
+                    <p><u>Android Developer Intern At EBT</u>></p>
+                    <p>Designed and built a data visualisation android application for enterprise resource planning.
+                        Used database connectivity and MPAndroidChart data visualisation library. </p>
+                </div>
             </div>
 
             <div class="col-md-6">
-                <div class="card card-body"></div>
+                <div class="card card-body border-dark h-100">
+                    <h5>Skills</h5>
+                    <hr>
+                    <p>SQL, Python, Django, HTML/CSS, MongoDB, Jupyter Notebooks, Cloud and APIs and a whole bunch
+                        more I can’t possibly mention in one sentence! ;)</p>
+                    <p>PS: Working on Data Science and Machine Learning.</p>
+                    <hr>
+                </div>
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-md-6">
-                <div class="card card-body"></div>
+                <div class="card card-body border-dark h-100">
+                    <h5>Projects</h5>
+                    <hr>
+                    <p>aaaa</p>
+
+                    <p>vvvv</p>
+                </div>
             </div>
 
             <div class="col-md-6">
-                <div class="card card-body"></div>
+                <div class="card card-body border-dark h-100">
+                    <h5>Eduaction</h5>
+                    <hr>
+                    <p><u>G. H. Raisoni College of Engineering</u></p>
+                    <p>B.E in Computer Science and Engineering. Scored: 7.84 CGPA</p>
+                    <p><u>Shivchhatrapati College</u></p>
+                    <p>Higher Secondary School Certificate. Scored: 70 Percent</p>
+                    <p><u>Saint Meera School</u></p>
+                    <p>Secondary School Certificate. Scored: 92 Percent</p>
+                </div>
             </div>
         </div>
         <br>
